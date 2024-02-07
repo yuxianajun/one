@@ -3,7 +3,7 @@ import pandas as pd
 from PIL import Image
 
 
-page=st.sidebar.radio('啥都有工作室',['我的兴趣推荐','我的图片编辑','我的智慧词典', '我的留言区', '网站推荐', '蛋仔推荐+联系方式'])
+page=st.sidebar.radio('啥都有工作室',['我是谁','我的兴趣推荐','我的图片编辑','我的智慧词典', '我的留言区', '网站推荐', '蛋仔推荐+联系方式'])
 
 def img_change(img, rc,gc, bc):
     '''图片处理'''
@@ -17,8 +17,13 @@ def img_change(img, rc,gc, bc):
             b = img_array[x, y][bc]
             img_array[x, y] = (r, g, b)
     return img
-        
+
 def page1():
+    st.write('一个中职生,会一点编程,力推蛋仔,免费,无广告的实用软件,顺带写点关于我们学校的事')
+    st.write('你从未离去')
+    with open('你从未离去.mp3', 'rb') as f:
+        mymp3 = f.read()
+def page2():
     st.write(':black[欢迎大家来到我的网站]')
     st.write('作者尽量保证网站不断更')
     st.write('欢迎各位喜欢蛋仔的朋友加入')
@@ -46,7 +51,7 @@ def page1():
     st.write(':black[http://xhslink.com/quTtPA]')
    
 
-def page2():
+def page3():
     st.write('只要平凡')
     with open('只要平凡.mp3', 'rb') as f:
         mymp3 = f.read()
@@ -77,7 +82,7 @@ def page2():
             #       img, 1, 0, 2 )
             #st.write('Values:', values)
 
-def page3():
+def page4():
     '''我的智慧词典'''
     st.write('智慧同典')
     #从本地文件中将词典信息读取出来，并存储在列表中
@@ -118,7 +123,7 @@ def page3():
                 # 恭喜你触发彩蛋，这是一行python代码
             print('hello world')''')
 
-def page4():
+def page5():
     '''我的留言区'''
     st.write('我的留言区')
     #从文件中加载内容。并处理成列表
@@ -143,7 +148,7 @@ def page4():
             f.write(message)
 
 
-def page5():
+def page6():
     #'''网站推荐'''
     st.write('宗旨是一切皆免费,平台个互通')
     st.write('https://tool.liumingye.cn/music/?page=searchPage#/')
@@ -151,7 +156,7 @@ def page5():
     
 
 
-def page6():
+def page7():
     st.write('视频来源')
     st.write('http://xiaohongshu.com')
     st.write('都来下载啊')
@@ -166,21 +171,21 @@ def page6():
     
     #st.video(video_bytes)
 
-
-if (page == '我的兴趣推荐'):
+if (page == '我是谁'):
     page1()
-elif (page == '我的图片编辑') :
+elif (page == '我的兴趣推荐'):
     page2()
-elif (page == '我的智慧词典') :
+elif (page == '我的图片编辑') :
     page3()
-elif (page == '我的留言区') :
+elif (page == '我的智慧词典') :
     page4()
-elif (page == '网站推荐') :
+elif (page == '我的留言区') :
     page5()
-elif (page == '蛋仔推荐+联系方式') :
+elif (page == '网站推荐') :
     page6()
-else :
-    pass
+elif (page == '蛋仔推荐+联系方式') :
+    page7()
+
 
 #备注
     #st.image("1.jpg")
