@@ -20,7 +20,7 @@ def img_change(img, rc,gc, bc):
 
 def page1():
     st.write('一个中职生,会一点编程,力推蛋仔,免费,无广告的实用软件,顺带写点关于我们学校的事')
-    st.write('你从未离去')
+    st.write('你从未离去.mp3')
     with open('你从未离去.mp3', 'rb') as f:
         mymp3 = f.read()
 def page2():
