@@ -23,6 +23,7 @@ def page1():
     st.write('你从未离去.mp3')
     with open('你从未离去.mp3', 'rb') as f:
         mymp3 = f.read()
+    st.audio(mymp3,format='audio/mp3', start_time=0)
 def page2():
     st.write(':black[欢迎大家来到我的网站]')
     st.write('作者尽量保证网站不断更')
