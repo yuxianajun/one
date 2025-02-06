@@ -3,7 +3,7 @@ import pandas as pd
 from PIL import Image
 
 
-page=st.sidebar.radio('啥都有工作室',['我是谁','我的兴趣推荐','我的图片编辑','我的智慧词典', '我的留言区', '网站推荐', '蛋仔推荐+联系方式'])
+page=st.sidebar.radio('你好',['我是谁','我的兴趣推荐','我的图片编辑','我的智慧词典', '我的留言区', '网站推荐', '蛋仔推荐+联系方式'])
 
 def img_change(img, rc,gc, bc):
     '''图片处理'''
@@ -20,7 +20,6 @@ def img_change(img, rc,gc, bc):
 
 def page1():
     st.write('我是一个中职生,会一点编程,力推免费,无广告好用的软件和网站,爱玩蛋仔,和平,以及我们学校的一些事')
-    st.write('青岛交通职业学校的文艺汇演:链接:https://pan.baidu.com/s/1l22A2DvZjBM_oAn0Pacxkg?pwd=istd 提取码:istd')
     st.write('只要平凡')
     with open('只要平凡.mp3', 'rb') as f:
         mymp3 = f.read()
@@ -49,10 +48,7 @@ def page2():
     st.audio(mymp3,format='audio/mp3', start_time=0)
 
     
-    st.write(':red[蛋仔视频推荐.不是本人]')
-    st.write(':black[http://xhslink.com/upLtPA]')
-    st.write(':black[http://xhslink.com/quTtPA]')
-   
+
 
 def page3():
     st.write('只要平凡')
@@ -160,14 +156,12 @@ def page6():
 
 
 def page7():
-    st.write('视频来源')
-    st.write('http://xiaohongshu.com')
-    st.write('都来下载啊')
-    st.write('https://party.163.com/')
-    st.write('和大家一块讨论吧:26271714')
+    st.write('和大家一块讨论吧:262717174')
     st.write('如需源码请联系')
     st.image('联系方式.jpg', caption='联系方式')
-    st.write('青岛交通职业学校的文艺汇演:链接:https://pan.baidu.com/s/1l22A2DvZjBM_oAn0Pacxkg?pwd=istd 提取码:istd')
+    st.write('2024毕业典礼:https://www.123684.com/s/LibETd-DECAh')
+    st.write('2024文艺汇演:https://www.123684.com/s/LibETd-RECAh')
+    st.write('2025文艺汇演:https://www.123684.com/s/LibETd-OECAh')
     #实验
    # video_file = open('video1.mp4', 'rb')
     #video_bytes = video_file.read()
